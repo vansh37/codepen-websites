@@ -6,22 +6,17 @@ html,body{
       line-height: 1.5;
   }
 
-#container{
+
+/*  #container{
     display: grid;
     grid-template-columns: 20% 80%;
-}
+}*/
 #navbar{
-    grid-column-start: 1;
     position: fixed;
-    max-width: 100%;
 }
 #main-doc{
-    grid-column-start: 2;
-    text-align: left;
-    z-index: 2;
-    border-left-style: ridge;
-    padding-left:10px;
-    padding-right:40px;
+    position: absolute;
+    margin-left: 300px;
 }
 code{
     display:block;
@@ -40,23 +35,26 @@ a{
     text-decoration: none;
 }
 img{
-    margin-left:auto;
-    margin-right:auto;
+   padding-left:130px;
 }
 
 .navlink{
     line-height: 2.5;
 }
 
-@media (max-width:600px){
-    #container{
-        display: grid;
-        grid-template-rows : 20% 80%;
-    }
+@media (max-width: 600px){
     #navbar{
-        grid-row-start: auto;
+        position: relative;
+        text-align: center;
+        
     }
     #main-doc{
-        grid-row-start: auto;
+        position: relative;
+        margin:0px;
+        
+    }
+    img{
+        max-width: 100%;
+        padding: 0px;
     }
 }
